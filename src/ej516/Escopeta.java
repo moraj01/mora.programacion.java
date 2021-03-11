@@ -1,19 +1,19 @@
 package ej516;
 
-public class escopeta extends armafuego{
+public class Escopeta extends Armafuego {
     private  boolean recortada;
     private float aumentorecortada;
 
-    public escopeta(float potencia, boolean cargada, boolean recortada, float aumentorecortada) {
+    public Escopeta(float potencia, boolean cargada, boolean recortada, float aumentorecortada) {
         super(potencia, cargada);
         this.recortada = recortada;
         this.aumentorecortada = aumentorecortada;
     }
-    public float atacar(){
-        float ataque;
+    public double atacar(){
+        double ataque;
         if(isCargada() == true){
             if (recortada == true) {
-                ataque = getPotencia() * aumentorecortada;
+                ataque = getPotencia()+(getPotencia() * aumentorecortada);
                 return ataque;
 
             }

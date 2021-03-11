@@ -1,15 +1,15 @@
 package ej517;
 
-public class comercial extends empleado {
+public class Comercial extends Empleado {
     private float ventas;
     private float comision;
 
-    public comercial(String nombre, float sueldo, float ventas, float comision) {
+    public Comercial(String nombre, float sueldo, float ventas, float comision) {
         super(nombre, sueldo);
         this.ventas = ventas;
         this.comision = comision;
     }
-    private void vende(float cantidad){
+    public void vende(float cantidad){
         setVentas(ventas+cantidad);
         return;
     }

@@ -1,32 +1,32 @@
 package ej516;
 
-public class armablanca extends arma{
+public class Armablanca extends Arma {
     private boolean afilada;
     private float reduccionsinafilar;
 
 
-    public armablanca(float potencia, boolean afilada, float reduccionsinafilar) {
+    public Armablanca(float potencia, boolean afilada, float reduccionsinafilar) {
         super(potencia);
         this.afilada = afilada;
         this.reduccionsinafilar = reduccionsinafilar;
     }
-    public void afilar(){
+    public boolean afilar(){
         if(afilada == false){
             setAfilada(true);
-            return;
+            return true;
         }
         else {
-            return;
+            return false;
         }
     }
-    public float atacar(){
-        float ataque;
+    public double atacar(){
+        double ataque;
         if(afilada == true){
            ataque = getPotencia();
            return  ataque;
        }
         else{
-            ataque = getPotencia() * reduccionsinafilar;
+            ataque = getPotencia()-(getPotencia() * reduccionsinafilar);
             return ataque;
         }
     }

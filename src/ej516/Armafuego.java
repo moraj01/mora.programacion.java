@@ -1,9 +1,9 @@
 package ej516;
 
-public class armafuego extends arma {
+public class Armafuego extends Arma {
     private boolean cargada;
 
-    public armafuego(float potencia, boolean cargada) {
+    public Armafuego(float potencia, boolean cargada) {
         super(potencia);
         this.cargada = cargada;
     }
@@ -11,9 +11,6 @@ public class armafuego extends arma {
         if (cargada == false){
             setCargada(true);
             return cargada;
-        }
-        if (cargada==true){
-            return true;
         }
         else{
             return false;
@@ -29,7 +26,7 @@ public class armafuego extends arma {
         }
         return false;
     }
-    public float atacar(){
+    public double atacar(){
         float ataque  = 0;
         if(cargada==false){
          return ataque;

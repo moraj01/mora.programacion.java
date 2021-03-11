@@ -1,13 +1,13 @@
 package ej516;
 
-public class arma {
+public class Arma {
     private float potencia;
 
-    public arma(float potencia) {
+    public Arma(float potencia) {
         this.potencia = potencia;
     }
 
-    public float atacar(){
+    public double atacar(){
         float ataque;
         ataque = potencia;
         return ataque;

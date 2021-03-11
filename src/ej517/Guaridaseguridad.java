@@ -1,10 +1,10 @@
 package ej517;
 
-public class guaridaseguridad extends empleado {
+public class Guaridaseguridad extends Empleado {
     private int noches;
     private  float extranoches;
 
-    public guaridaseguridad(String nombre, float sueldo, int noches, float extranoches) {
+    public Guaridaseguridad(String nombre, float sueldo, int noches, float extranoches) {
         super(nombre, sueldo);
         this.noches = noches;
         this.extranoches = extranoches;

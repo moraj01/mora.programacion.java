@@ -1,10 +1,10 @@
 package ej516;
 
-public class rifle extends armafuego {
+public class Rifle extends Armafuego {
     private  float alcance;
 
 
-    public rifle(float potencia, boolean cargada, float alcance) {
+    public Rifle(float potencia, boolean cargada, float alcance) {
         super(potencia, cargada);
         this.alcance = alcance;
     }

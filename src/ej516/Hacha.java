@@ -1,9 +1,9 @@
 package ej516;
 
-public class hacha extends armablanca{
+public class Hacha extends Armablanca {
     private int filos;
 
-    public hacha(float potencia, boolean afilada, float reduccionsinafilar, int filos) {
+    public Hacha(float potencia, boolean afilada, float reduccionsinafilar, int filos) {
         super(potencia, afilada, reduccionsinafilar);
         this.filos = filos;
     }

@@ -1,9 +1,9 @@
 package ej516;
 
-public class pistola extends armafuego {
+public class Pistola extends Armafuego {
     private int calibre;
 
-    public pistola(float potencia, boolean cargada, int calibre) {
+    public Pistola(float potencia, boolean cargada, int calibre) {
         super(potencia, cargada);
         this.calibre = calibre;
     }

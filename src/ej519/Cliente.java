@@ -3,12 +3,14 @@ package ej519;
 public class Cliente {
     private long id;
     private double dinerogastado;
-    private boolean vip;
+    private boolean vip = false;
 
-    public Cliente(long id, double dinerogastado, boolean vip) {
+    public Cliente(long id, double dinerogastado) {
         this.id = id;
         this.dinerogastado = dinerogastado;
-        this.vip = vip;
+        if(dinerogastado>=1000){
+            setVip(true);
+        }
     }
 
     public long getId() {

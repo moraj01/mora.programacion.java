@@ -34,6 +34,8 @@ public class ONG {
                     voluntariodevolver = voluntariocomprobar;
                 }
             }
+            mayor = false;
+            voluntarios.remove(voluntariodevolver);
             return voluntariodevolver;
         }
         else {
@@ -44,7 +46,12 @@ public class ONG {
                     voluntariodevolver = voluntariocomprobar;
                 }
             }
+            mayor = true;
+            voluntarios.remove(voluntariodevolver);
             return voluntariodevolver;
+
+
+
         }
 
     }

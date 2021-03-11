@@ -1,10 +1,10 @@
 package ej517;
 
-public class empleado {
+public class Empleado {
     private String nombre;
     private float sueldo;
 
-    public empleado(String nombre, float sueldo) {
+    public Empleado(String nombre, float sueldo) {
         this.nombre = nombre;
         this.sueldo = sueldo;
     }
@@ -30,7 +30,7 @@ public class empleado {
 
     @Override
     public String toString() {
-        return "ej517{" +
+        return "empleado{" +
                 "nombre='" + nombre + '\'' +
                 ", sueldo=" + sueldo +
                 '}';
