@@ -1,35 +1,36 @@
 package ej519;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Grupo {
-    private ArrayList<persona> grupo = new ArrayList<persona>();
+    private List<Persona> grupo = new ArrayList<Persona>();
 
-    public Grupo(persona persona1){
-        this.grupo = new ArrayList<persona>();
+    public Grupo(Persona persona1){
+        this.grupo = new ArrayList<Persona>();
         grupo.add(persona1);
     }
-    public Grupo(ArrayList grupo1){
+    public Grupo(List<Persona> grupo1){
         this.grupo = grupo1;
     }
 
-    public ArrayList<persona> getGrupo() {
+    public List<Persona> getGrupo() {
         return grupo;
     }
 
-    public void setGrupo(ArrayList<persona> grupo) {
+    public void setGrupo(List<Persona> grupo) {
         this.grupo = grupo;
     }
-    public boolean registrapersona(persona personaandir) {
-        for (persona persona : grupo) {
-            if (persona == personaandir) {
+    public boolean registrapersona(Persona personaandir) {
+        for (Persona persona : grupo) {
+            if (persona.equals(personaandir)) {
                 return false;
             }
         }
         grupo.add(personaandir);
         return true;
     }
-    public boolean eliminapersona(persona personaelimar){
+    public boolean eliminapersona(Persona personaelimar){
         if(grupo.contains(personaelimar)){
             grupo.remove(personaelimar);
             return  true;

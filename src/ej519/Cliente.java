@@ -1,17 +1,20 @@
 package ej519;
 
-public class Cliente {
+
+public class Cliente extends Persona {
     private long id;
     private double dinerogastado;
     private boolean vip = false;
 
-    public Cliente(long id, double dinerogastado) {
+    public Cliente(String nombre, String apellidos, int edad, long id, double dinerogastado) {
+        super(nombre, apellidos, edad);
         this.id = id;
         this.dinerogastado = dinerogastado;
-        if(dinerogastado>=1000){
-            setVip(true);
+        if(dinerogastado>=1000) {
+            this.vip = true;
         }
     }
+
 
     public long getId() {
         return id;

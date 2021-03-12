@@ -64,7 +64,6 @@ public class ej515_test {
         assertEquals(escuadron_1.getSoldados(), peloton1);
         escuadron_1.setSoldados(peloton2);
          assertEquals(escuadron_1.getSoldados(), peloton2);
-
      }
     @Test
     void annadesoldado(){

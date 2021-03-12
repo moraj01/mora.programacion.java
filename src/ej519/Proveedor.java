@@ -2,11 +2,12 @@ package ej519;
 
 import java.util.Objects;
 
-public class Proveedor {
+public class Proveedor extends Persona {
     private String codigo;
     private float n_productos;
 
-    public Proveedor(String codigo, float n_productos) {
+    public Proveedor(String nombre, String apellidos, int edad, String codigo, float n_productos) {
+        super(nombre, apellidos, edad);
         this.codigo = codigo;
         this.n_productos = n_productos;
     }
